@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <LinearLayout
+        style="@style/CustomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.beatmaker.ui.InfoView
+            android:id="@+id/textPosition"
+            style="@style/InfoView"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1.1.0" />
+
+        <ImageButton
+            android:id="@+id/btnRewind"
+            style="@style/CustomImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_rewind_48"
+            />
+
+        <ImageButton
+            android:id="@+id/btnStartStop"
+            style="@style/CustomImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_play_arrow_48"
+            />
+
+        <com.beatmaker.ui.InfoView
+            android:id="@+id/textBpm"
+            style="@style/InfoView"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="110bpm"
+            android:textAlignment="viewEnd" />
+
+    </LinearLayout>
+
+    <com.beatmaker.beatmaker.BeatView
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+    />
+
+    <!--
+    <LinearLayout
+        style="@style/CustomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnTest"
+            style="@style/CustomImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_rewind_48"/>
+
+    </LinearLayout>
+    -->
+
+</LinearLayout>

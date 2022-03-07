@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.BeatMaker" parent="Theme.AppCompat">
+    </style>
+    <style name="Theme.BeatMaker.Fullscreen" parent="Theme.BeatMaker">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ThemeOverlay.BeatMaker.FullscreenContainer" parent="">
+        <!-- <item name="fullscreenBackgroundColor">@color/main_background</item> -->
+        <!-- <item name="fullscreenTextColor">@color/main_font</item> -->
+    </style>
+</resources>

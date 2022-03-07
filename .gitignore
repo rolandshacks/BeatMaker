@@ -1,0 +1,17 @@
+*.iml
+*.iws
+**/.gradle
+*.class
+local.properties
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+**/.idea/libraries
+**/.idea/datasources.xml
+**/.idea/dataSources.ids
+**/.idea/vcs.xml
+**/.idea/deploymentTargetDropDown.xml
+**/.DS_Store
+**/build
+**/captures
+.externalNativeBuild
+.cxx

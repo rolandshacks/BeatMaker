@@ -1,0 +1,85 @@
+<resources>
+
+    <style name="Widget.Theme.BeatMaker.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.BeatMaker.ButtonBar.Fullscreen" parent="">
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="CustomTextView" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginLeft">20px</item>
+        <item name="android:layout_marginRight">20px</item>
+    </style>
+
+    <style name="InfoView" parent="TextAppearance.AppCompat">
+        <item name="android:paddingLeft">30px</item>
+        <item name="android:paddingRight">40px</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/digital_mono</item>
+    </style>
+
+    <style name="CustomImageButton" parent="Widget.AppCompat.Button.Borderless"></style>
+
+    <style name="CustomBar" parent=""></style>
+
+    <style name="PanelStyle" parent=""></style>
+
+    <style name="Panel" parent="PanelStyle">
+        <item name="android:padding">10sp</item>
+        <item name="android:background">@color/panel_background</item>
+    </style>
+
+    <style name="PanelNumberInput" parent="PanelStyle">
+        <item name="android:background">@color/number_input_text_background</item>
+    </style>
+
+    <style name="PanelText" parent="PanelStyle">
+        <item name="android:layout_marginTop">8sp</item>
+        <item name="android:paddingTop">4sp</item>
+        <item name="android:paddingBottom">4sp</item>
+        <item name="android:minHeight">20sp</item>
+    </style>
+
+    <style name="PanelTextHeading1" parent="PanelText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:layout_marginBottom">10dip</item>
+    </style>
+
+    <style name="PanelTextHeading2" parent="PanelText">
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="PanelButton" parent="">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Table" parent="">
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="TableRow" parent="">
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+    </style>
+
+    <style name="TableKey" parent="">
+        <item name="android:layout_gravity">center_vertical|left</item>
+        <item name="android:layout_marginRight">8dip</item>
+    </style>
+
+    <style name="TableValue" parent="">
+        <item name="android:padding">3dip</item>
+    </style>
+
+</resources>

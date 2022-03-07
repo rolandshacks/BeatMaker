@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="NumberInput">
+        <attr name="android:textColor" format="color" />
+        <attr name="buttonBackgroundColor" format="color" />
+        <attr name="buttonBackground" format="reference" />
+        <attr name="buttonTextColor" format="color" />
+        <attr name="value" format="integer" />
+        <attr name="minValue" format="integer" />
+        <attr name="maxValue" format="integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <declare-styleable name="BitmapView">
+        <attr name="android:layout_width" format="integer" />
+        <attr name="android:layout_height" format="integer" />
+        <attr name="android:text" format="string" />
+        <attr name="android:textOn" format="string" />
+        <attr name="android:textOff" format="string" />
+        <attr name="android:color" format="color" />
+        <attr name="checkable" format="boolean" />
+        <attr name="android:checked" format="boolean" />
+        <attr name="type" format="enum">
+            <enum name="color" value="0"/>
+            <enum name="black" value="1"/>
+            <enum name="led" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

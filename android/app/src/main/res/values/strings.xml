@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BeatMaker</string>
+    <string name="button_start_stop">Ok</string>
+    <string name="nomidi_dialog_title">BeatMaker Initialization Failure</string>
+    <string name="nomidi_dialog_text">This device does not support Midi features.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="midi_channels">
+        <item>Channel #1</item>
+        <item>Channel #2</item>
+        <item>Channel #3</item>
+        <item>Channel #4</item>
+        <item>Channel #5</item>
+        <item>Channel #6</item>
+        <item>Channel #7</item>
+        <item>Channel #8</item>
+        <item>Channel #9</item>
+        <item>Channel #10</item>
+        <item>Channel #11</item>
+        <item>Channel #12</item>
+        <item>Channel #13</item>
+        <item>Channel #14</item>
+        <item>Channel #15</item>
+        <item>Channel #16</item>
+    </string-array>
+
+</resources>

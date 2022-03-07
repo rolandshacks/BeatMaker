@@ -1,0 +1,19 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="BeatView">
+        <attr name="android:backgroundTint" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="InfoView">
+        <attr name="android:text" format="string" />
+        <attr name="android:textColor" format="color" />
+        <attr name="android:backgroundTint" format="color" />
+        <attr name="android:textSize" format="dimension" />
+        <attr name="android:fontFamily" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Panel"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:minWidth="300sp"
+    android:orientation="vertical"
+    tools:context=".SidePanelFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/PanelTextHeading1"
+            android:textAlignment="center"
+            android:text="Settings" />
+
+        <TableLayout
+            style="@style/Table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow style="@style/TableRow">
+                <TextView
+                    style="@style/TableKey"
+                    android:text="Channel" />
+
+                <com.beatmaker.ui.NumberInput
+                    android:id="@+id/configMidiChannel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/PanelNumberInput"
+                    app:value="1"
+                    app:minValue="1"
+                    app:maxValue="16" />
+
+            </TableRow>
+
+            <TableRow android:id="@+id/sectionNote" style="@style/TableRow" >
+                <TextView
+                    style="@style/TableKey"
+                    android:text="Note" />
+                <com.beatmaker.ui.NumberInput
+                    android:id="@+id/configMidiPitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/PanelNumberInput"
+                    app:value="36"
+                    app:minValue="0"
+                    app:maxValue="127" />
+            </TableRow>
+
+            <TableRow android:id="@+id/sectionVelocity" style="@style/TableRow">
+                <TextView
+                    style="@style/TableKey"
+                    android:text="Velocity" />
+                <com.beatmaker.ui.NumberInput
+                    android:id="@+id/configMidiVelocity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/PanelNumberInput"
+                    app:value="72"
+                    app:minValue="0"
+                    app:maxValue="127" />
+            </TableRow>
+
+            <TableRow android:id="@+id/sectionData" style="@style/TableRow">
+                <TextView
+                    style="@style/TableKey"
+                    android:text="Data" />
+                <TextView
+                    android:id="@+id/txtMidiData"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:background="@color/number_input_text_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="C-1, D#1" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:gravity="center">
+
+            <com.beatmaker.ui.BitmapButton
+                android:id="@+id/btnCapture"
+                android:layout_width="0.8in"
+                android:layout_height="50sp"
+                android:text="Capture"
+                android:textOn="Capturing..."
+                style="@style/PanelButton"
+                app:checkable="true"
+                app:type="led" />
+
+        <com.beatmaker.ui.BitmapButton
+            android:id="@+id/btnReset"
+            android:layout_width="0.8in"
+            android:layout_height="50sp"
+            style="@style/PanelButton"
+            android:text="Reset"
+            app:type="color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <com.beatmaker.ui.BitmapButton
+            android:id="@+id/btnClose"
+            android:layout_width="1in"
+            android:layout_height="40sp"
+            style="@style/PanelButton"
+            android:text="Close"
+            app:type="color"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="main_font">#ff879CAA</color>
+    <color name="main_background">#ff17181A</color>
+    <color name="panel_background">#ff27282A</color>
+
+    <color name="number_input_text">#ffcccccc</color>
+    <color name="number_input_text_background">#ff222325</color>
+    <color name="number_input_background">#ff17181A</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+
+</resources>
